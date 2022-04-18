@@ -1,0 +1,29 @@
+<meta charset = "UTF - 8">
+<h3> Média das idades da família </h3>
+<script>
+
+function pulaLinha (){
+	document.write ("<br>");
+	document.write ("<br>");
+}
+
+function mostra (frase){
+	document.write (frase);
+	pulaLinha();
+}
+//recebe o numero de familiares
+//pergunta a idade de cada um
+//calcula media
+
+var numeroFamiliares = parseInt (prompt ("Quantos familiares?"));
+var idade = 0;
+
+for (var contador = 0; contador < numeroFamiliares; contador ++){
+	idade = idade + parseInt (prompt ("Qual a idade?"));
+}
+
+var media = idade / numeroFamiliares;
+mostra ("A média é " + media);
+
+
+</script>
